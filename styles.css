@@ -274,4 +274,8 @@ h3 {
         display: inline-block;
         text-align: center;
     }
+
+    .Teams img {
+      width: 15%;
+    }
 }
