@@ -25,11 +25,14 @@ a {
   }
   
   .Logo- { 
-      grid-area: Logo-;
-      background-color: #ADB5BD;
-      
+      grid-area: Logo-; 
 }
   
+.Logo- img {
+  width:75%;
+  text-align: center;
+}
+
   .Title { 
       grid-area: Title; 
 }
@@ -102,7 +105,7 @@ h3 {
     justify-content: center;
     align-content: center;
     margin-top: 1%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
   }
 
   .container-social .icon{
@@ -215,17 +218,20 @@ h3 {
   
 /*FOOTER*/
 .container-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #ADB5BD;
-    text-align: center;
+  padding: 0.5em 0 0.5em 0;
+  width: 100%;
+  background-color: #ADB5BD;
+  text-align: center;
 }
 
 /*MEDIA QUERIES*/
 
 /*****XLARGE - min-width:1200px*****/
 @media (min-width: 1200px) {
+  .Logo- img {
+    width: 50%;
+  }
+
   .container-app a img{
     width:25%;
     height:25%;
@@ -234,6 +240,7 @@ h3 {
 
 /*****LARGE - between 992px and 1199 px*****/
 @media (min-width: 992px) and (max-width: 1199px) {
+  
   h1 {
     font-size: 1.8rem;
   }
@@ -245,15 +252,23 @@ h3 {
     font-size: 1.6rem;
   }
 
+  .Logo- img {
+    width: 80%;
+  }
+
   .Teams img {
-    width: 25%;
+    width: 20%;
   }
 }
 
 /*****SMALL - between 576px and 767px*****/
-@media (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 767px) {
   h1 {
     font-size: 1.2rem;
+  }
+
+  .Logo- img {
+    width: 100%;
   }
 
   .Teams img {
@@ -273,6 +288,10 @@ h3 {
         margin: auto;
     }
 
+    .Logo- img {
+      width: 40%;
+    }
+
     h1 {
         text-align: center;
         font-size: 2rem;
@@ -284,6 +303,6 @@ h3 {
     }
 
     .Teams img {
-      width: 15%;
+      width: 18%;
     }
 }
