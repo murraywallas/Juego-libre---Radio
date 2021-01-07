@@ -97,6 +97,13 @@ h3 {
   text-align: center;
 }
 
+/*CONTENIDO-PAYPAL*/
+.container-paypal {
+  display: flex;
+  justify-content: center;
+  align-content: center
+  ;
+}
 
 /*CONTENIDO - RRSS*/
 .container-social{
